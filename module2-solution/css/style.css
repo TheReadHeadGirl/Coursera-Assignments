@@ -1,0 +1,86 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+h3{
+	position: absolute; /*to position it inside the section div */
+	top: 0px;
+	right: 0px; 
+	width: 30%;
+	text-align: center;	
+}
+
+p {
+  	margin-right: auto;
+  	margin-left: auto;
+  	margin-top: 15px;
+ 	color: white;
+  	padding: 10px;
+  	font-size: 90%;
+}
+
+
+
+#title1{
+	color: #708090;
+	border: 1px solid #8B4513;
+	background-color: #F0FFFF;
+}
+
+#title2{
+	color: #800000;
+	border: 1px solid #A0522D;
+	background-color: #DEB887;
+}
+
+#title3{
+	color: #00008B;
+	border: 1px solid #191970;
+	background-color: #91CBF2;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+.section{
+	position: relative;
+	border: 1px solid black;
+   	background-color: #F2B591;
+   	color: white;
+  	margin: 15px;
+  	padding: 10px;
+  	overflow: auto;
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+  	width: 33.33%;
+    float: left;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+
+  }
+}
